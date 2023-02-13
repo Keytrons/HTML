@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Домашнее задание
+Создайте анкету для пользователя.
+1. Создайте чекбоксы:
+- выбрать любимые жанры кино;
+- выбрать любимые цвета;
+- выбрать любимое блюдо.
+2. Создайте радиокнопки:
+- выбрать страну проживания;
+- выбрать семейное положение;
+- выбрать тип занятости (студент, работающий, безработный).
+Для всех <input> необходимо добавить подпись с помощью <label>.
+Объединить <input> из одной категории (выбор жанра, выбор цвета, 
+выбор семейного положения и т.д.) с помощью <fieldset>. -->
+<body>
+    <form>
+        <fieldset>
+            <legend>Выберите любимые жанры кино</legend>
+            <label for="genres">Приключения</label>
+            <input type="checkbox" id="genres" name="movie" value="Приключения" checked>
+            <label for="genres1">Комедия</label>
+            <input type="checkbox" id="genres1" name="movie" value="Комедия">
+            <label for="genres2">Документальный</label>
+            <input type="checkbox" id="genres2" name="movie" value="Документальный">
+            <label for="genres3">Научный</label>
+            <input type="checkbox" id="genres3" name="movie" value="Научный">
+            <label for="genres4">Ужасы</label>
+            <input type="checkbox" id="genres4" name="movie" value="Ужасы">
+        </fieldset>
+        <fieldset>
+            <legend>Выбрать любимые цвета</legend>
+            <label for="colors">Блестящий зеленый</label>
+            <input type="checkbox" id="colors" name="colors" value="Блестящий зеленый">
+            <label for="colors1">Желтая сера</label>
+            <input type="checkbox" id="colors1" name="colors" value="Желтая сера">
+            <label for="colors2">Индиго</label>
+            <input type="checkbox" id="colors2" name="colors" value="Индиго" checked>
+            <label for="colors3">Кремовый</label>
+            <input type="checkbox" id="colors3" name="colors" value="Кремовый">
+            <label for="colors4">Морковный</label>
+            <input type="checkbox" id="colors4" name="colors" value="Морковный">
+        </fieldset>
+        <fieldset>
+            <legend>Выбрать любимое блюдо</legend>
+            <label for="dish">Пельмени</label>
+            <input type="checkbox" id="dish" name="dish" value="Пельмени">
+            <label for="dish1">Плов</label>
+            <input type="checkbox" id="dish1" name="dish" value="Плов">
+            <label for="dish2">Борщ</label>
+            <input type="checkbox" id="dish2" name="dish" value="Борщ" checked>
+            <label for="dish3">Шаурма</label>
+            <input type="checkbox" id="dish3" name="dish" value="Шаурма">
+            <label for="dish4">Лазанья</label>
+            <input type="checkbox" id="dish4" name="dish" value="Лазанья">
+        </fieldset>
+        <fieldset>
+            <legend>Выбрать страну проживания</legend>
+            <label for="country">Швейцария</label>
+            <input type="radio" id="country" name="country" value="Швейцария">
+            <label for="country1">Норвегия</label>
+            <input type="radio" id="country1" name="country" value="Норвегия">
+            <label for="country2">Австралия</label>
+            <input type="radio" id="country2" name="country" value="Австралия">
+            <label for="country3">Дания</label>
+            <input type="radio" id="country3" name="country" value="Дания">
+            <label for="country4">Беларусь</label>
+            <input type="radio" id="country4" name="country" value="Беларусь" checked>
+        </fieldset>
+        <fieldset>
+            <legend>Выбрать семейное положение</legend>
+            <label for="maritalstatus">Не замужем, не женат</label>
+            <input type="radio" id="maritalstatus" name="maritalstatus" value="Не замужем, не женат">
+            <label for="maritalstatus1">Замужем, женат</label>
+            <input type="radio" id="maritalstatus1" name="maritalstatus" value="Замужем, женат" checked>
+            <label for="maritalstatus2">Разведён, разведена</label>
+            <input type="radio" id="maritalstatus2" name="maritalstatus" value="Разведён, разведена">
+            <label for="maritalstatus3">Вдова, вдовец</label>
+            <input type="radio" id="maritalstatus3" name="maritalstatus" value="Вдова, вдовец">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Выбрать тип занятости</legend>
+            <label for="busyness">Полная занятость</label>
+            <input type="radio" id="busyness" name="busyness" value="Полная занятость">
+            <label for="busyness1">Частичная занятость</label>
+            <input type="radio" id="busyness1" name="busyness" value="Частичная занятость">
+            <label for="busyness2">Вахта</label>
+            <input type="radio" id="busyness2" name="busyness" value="Вахта">
+            <label for="busyness3">Удалённая работа</label>
+            <input type="radio" id="busyness3" name="busyness" value="Удалённая работа">
+            <label for="busyness4">Стажировка</label>
+            <input type="radio" id="busyness4" name="busyness" value="Стажировка" checked>
+        </fieldset>
+    </form>
+</body>
+</html>

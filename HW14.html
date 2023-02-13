@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Домашнее задание
+Создайте форму. Внутри неё должны находиться следующие поля:
+
+- Инпут для ввода имени, данное поле обязательно должно быть заполнено. 
+Используйте placeholder, чтобы сообщить пользователю, какие данные он должен 
+ввести в данное поле.
+
+- Инпут для ввода возраста. Минимальное значение, которое пользователь 
+может ввести в данную форму, равно 6, максимальное - 100. 
+Используйте placeholder, чтобы сообщить пользователю, какие данные он 
+должен ввести в данное поле.
+
+- Радиокнопки, где пользователь выбирает своё семейное положение. 
+Данные радиокнопки объедините с помощью <fieldset>.
+
+- Инпут, который имеет доступ только для чтения и имеет 
+значение = ‘это значение отправляется с формой’. <textarea>, 
+максимальное количество символов, которое пользователь может 
+ввести в это поле, равно 300.
+
+- Добавить кнопку для отправки формы. -->
+</head>
+<body>
+    <form action="#" autocomplete="off">
+        <div>
+            <label for="name">Введите имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите свое имя">
+            <label for="surname">Введите фамилию:</label>
+            <input type="text" id="surname" name="surname" placeholder="Введите свою фамилию">
+            <label for="age">Введите возраст:</label>
+            <input type="number" id="age" name="age" placeholder="Возраст" min="6" max="100" step="1">
+          
+        </div>
+        <br>
+        <fieldset>
+            <legend>Выбрать семейное положение</legend>
+            <label for="maritalstatus">Не замужем, не женат</label>
+            <input type="radio" id="maritalstatus" name="maritalstatus" value="Не замужем, не женат">
+            <label for="maritalstatus1">Замужем, женат</label>
+            <input type="radio" id="maritalstatus1" name="maritalstatus" value="Замужем, женат" checked>
+            <label for="maritalstatus2">Разведён, разведена</label>
+            <input type="radio" id="maritalstatus2" name="maritalstatus" value="Разведён, разведена">
+            <label for="maritalstatus3">Вдова, вдовец</label>
+            <input type="radio" id="maritalstatus3" name="maritalstatus" value="Вдова, вдовец">
+        </fieldset>
+        <br>
+        <div>
+            <textarea name="txt" id="txt" placeholder="Это значение отправляется с формой" cols="30" rows="5" maxlength="300" disabled></textarea>
+        </div>
+        <div> 
+            <button type="submit">Отправить</button>
+        </div> 
+    </form>
+</body>
+</html>

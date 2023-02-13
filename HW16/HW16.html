@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Работа с video и audio</h1>
+    <div >
+        <p>Мое video</p>
+        <video controls width="320" autoplay muted loop>
+            <source src="video/cat.mp4"
+                    type="video/mp4">
+            <source src="video/cat.webm"
+                    type="video/webm">
+            Скачать видео
+            <a href="video/cat.webm">WEBM</a>
+            or
+            <a href="video/cat.mp4">MP4</a>
+            video.
+        </video>
+        <p>video файл с YouTube</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NcYLWbSlaJ4" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+    </div>
+    <div>
+        <p>audio файл</p>
+        <audio controls style="width:100%;max-width:600px;" autoplay loop>
+            <source src="audio/Saraswati.mp3" type="audio/mp3">
+            <source src="audio/Saraswati.ogg" type="audio/ogg">
+            <p>Ваш браузер не поддерживает HTML5 аудио.
+               <a href="audio/Saraswati.mp3">ссылка на аудио</a></p>
+        </audio>
+          
+    </div>
+</body>
+</html>
